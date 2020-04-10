@@ -48,7 +48,12 @@ import React from 'react';
             body = <div>Error occurred { this.state.error} </div>
         } else {
             var jokes = this.state.jokes.map(
-                joke => <div key={joke.id} className="jokesdisplay">{jokes}</div>
+                joke => <div key={joke.id} 
+                className="jokesdisplay">
+                    <h1>
+                {joke.setup}{joke.delivery}
+                </h1>
+                </div>
             );
             body = <div>{jokes}</div> 
         }
