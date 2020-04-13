@@ -1,7 +1,7 @@
 const SportsJokesData = [
     {
         id: "1",
-        question: "What did the baseball glove say to the ball? Catch ya later!",
+        question: "What did the baseball glove say to the ball?",
         answer: "Catch ya later!"
 
     },
