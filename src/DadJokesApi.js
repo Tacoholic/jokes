@@ -3,13 +3,13 @@ import React, { Component } from "react";
 class DadJokesApi extends Component {
   constructor(props) {
     super(props);
-    this.fetchJokes = this.fetchJokes.bind(this);
+    this.getJokes = this.getJokes.bind(this);
     this.state = {
       joke: null
     };
   }
 
-  fetchJokes() {
+  getJokes() {
     fetch("https://cors-anywhere.herokuapp.com/https://icanhazdadjoke.com/", {
       headers: {
         "Content-Type": "appliction/json",
@@ -32,7 +32,7 @@ class DadJokesApi extends Component {
               <p>{this.state.joke.joke}</p>
             </div>)}
         </ul>
-        <button onClick={this.fetchJokes}>Click me!!</button>
+        <button onClick={this.getJokes}>Click me!!</button>
       </div>
     );
   }
