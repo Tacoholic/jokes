@@ -1,75 +1,41 @@
-import React, { Component } from 'react';
-
-
-// class JokesApi extends Component {
-//     constructor(props){
-//         super(props);
-
-//         this.state = {
-//             jokes: [],
-//         };
-//     }
-
-//     componentDidMount(){
-//         fetch('https://cors-anywhere.herokuapp.com/https://icanhazdadjoke.com/', {
-//             headers: {
-//                 'Content-Type': 'appliction/json',
-//                 'Accept': 'application/json'
-//             }
-//         })
-//             .then(response => response.json())
-//             .then(data => this.setState(prev => ({jokes: prev.jokes.concat(data.joke)})))
-//     }
-
-//     render () {
-//       var jokes;
-//         return (
-//             <ul>
-//                 {this.state.jokes.map(joke => 
-//                   <div key={joke.id}>
-//                      <p>{joke.joke}</p>
-//                   </div>    
-//                 )}
-//             </ul>
-//         )
-//     }
-// }
-
-
-// export default JokesApi;
+import React, { Component } from "react";
 
 class DadJokesApi extends Component {
-    constructor(props){
-        super(props);
+  constructor(props) {
+    super(props);
+    this.fetchJokes = this.fetchJokes.bind(this);
+    this.state = {
+      joke: null
+    };
+  }
 
-        this.state = {
-            jokes: [],
-        };
-    }
+  fetchJokes() {
+    fetch("https://cors-anywhere.herokuapp.com/https://icanhazdadjoke.com/", {
+      headers: {
+        "Content-Type": "appliction/json",
+        Accept: "application/json"
+      }
+    })
+      .then(response => response.json())
+      .then((data) => {
+        console.log(this);
+        this.setState({joke: data});
+      });
+  }
 
-    componentDidMount(){
-        fetch('https://cors-anywhere.herokuapp.com/https://icanhazdadjoke.com/', {
-            headers: {
-                'Content-Type': 'appliction/json',
-                'Accept': 'application/json'
-            }
-        })
-            .then(response => response.json())
-            .then(data => this.setState(prev => ({jokes: prev.jokes.concat(data)})))
-    }
-
-    render () {
-    //   console.log(this.state.jokes);
-        return (
-            <ul>
-                {this.state.jokes.map(joke => 
-                  <div key={joke.id}>
-                     <p>{joke.joke}</p>
-                  </div>    
-                )}
-            </ul>
-        )
-    }
+  render() {
+    return (
+      <div>
+        <ul>
+          
+            {this.state.joke && (<div key={this.state.joke.id}>
+              <p>{this.state.joke.joke}</p>
+            </div>)}
+        </ul>
+        <button onClick={this.fetchJokes}>Click me!!</button>
+      </div>
+    );
+  }
 }
 
 export default DadJokesApi;
