@@ -1,5 +1,5 @@
 import React from 'react'
-import SportsJokesData from './SportsJokesData';
+import SportsJokesData from '../data/SportsJokesData';
 
 const initialState = {
   randomJoke: []
