@@ -4,10 +4,11 @@ import React from 'react';
  class ProgrammingJokesApi extends React.Component {
     constructor(props){
         super(props);
+        this.getData = this.getData.bind(this);
         this.state = {
             isLoaded: false,
             error: null,
-            jokes: []
+            jokes: null
         }
     }
  componentDidMount() 
@@ -25,7 +26,7 @@ import React from 'react';
 
                  this.setState( prev =>({
                     isLoaded: true,
-                    jokes: [...prev.jokes,json]
+                    jokes: json
                     
                  }))
                     
@@ -41,23 +42,18 @@ import React from 'react';
      xhr.send();
     }
     render() { 
-        var body;
-        if(!this.state.isLoaded){
-            body = <div>...Loading</div>;
-        } else if (this.state.error) {
-            body = <div>Error occurred { this.state.error} </div>
-        } else {
-            var jokes = this.state.jokes.map(
-                joke => <div key={joke.id} 
-                className="jokesdisplay">
-                    <h1>
-                {joke.setup}{joke.delivery}
-                </h1>
-                </div>
-            );
-            body = <div>{jokes}</div> 
-        }
-    return body;
+      return (
+        <div>
+        <ul>
+          
+            {this.state.jokes && (<div key={this.state.jokes.id}>
+              <p>{this.state.jokes.setup}</p>
+              <p>{this.state.jokes.delivery}</p>
+            </div>)}
+        </ul>
+        <button onClick={this.getData}>Click me!!</button>
+      </div>
+      )
      }
     }
     export default ProgrammingJokesApi;
