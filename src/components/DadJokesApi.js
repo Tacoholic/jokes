@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom';
 
 class DadJokesApi extends Component {
   constructor(props) {
@@ -33,6 +34,15 @@ class DadJokesApi extends Component {
             </div>)}
         </ul>
         <button onClick={this.getJokes}>Click me!!</button>
+        <Link to="/ProgrammingJokes">
+        <button>Programming Jokes</button>
+      </Link>
+      <Link to="/">
+        <button>Home Page</button>
+      </Link>
+      <Link to="/SportsJokes">
+        <button>Sports Jokes</button>
+      </Link>
       </div>
     );
   }

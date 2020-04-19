@@ -1,5 +1,6 @@
 import React from 'react'
 import SportsJokesData from '../data/SportsJokesData';
+import { Link } from 'react-router-dom';
 
 const initialState = {
   randomJoke: []
@@ -26,6 +27,18 @@ class SportsJokesApi extends React.Component {
       <p> {randomJoke.question} </p> 
       <p> {randomJoke.answer} </p>
       <button onClick = {this.getRandomJoke}>click here </button> 
+  
+      <Link to="/ProgrammingJokes">
+        <button>Programming Jokes</button>
+      </Link>
+      <Link to="/">
+        <button>Home Page</button>
+      </Link>
+      <Link to="/DadJokes">
+        <button>Dad Jokes</button>
+      </Link>
+
+
       </React.Fragment >
     );
   }

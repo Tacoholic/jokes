@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 
  class ProgrammingJokesApi extends React.Component {
     constructor(props){
@@ -52,6 +52,15 @@ import React from 'react';
             </div>)}
         </ul>
         <button onClick={this.getData}>Click me!!</button>
+        <Link to="/SportsJokes">
+        <button>Sports Jokes</button>
+      </Link>
+      <Link to="/">
+        <button>Home Page</button>
+      </Link>
+      <Link to="/DadJokes">
+        <button>Dad Jokes</button>
+      </Link>
       </div>
       )
      }
