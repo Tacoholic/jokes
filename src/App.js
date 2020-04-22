@@ -4,12 +4,13 @@ import DadJokesApi from './components/DadJokesApi'
 import SportsJokesApi from './components/SportsJokesApi'
 import ProgrammingJokesApi from './components/ProgrammingJokesApi';
 import { Route, Switch} from "react-router-dom";
+import Modal from './components/Modal';
 
 function App() {
   return (
       <main>
+        <Modal />
         <Switch>
-          
           <Route path="/DadJokes" component={DadJokesApi} />
           <Route path="/SportsJokes" component={SportsJokesApi} />
           <Route path="/ProgrammingJokes" component={ProgrammingJokesApi} />
