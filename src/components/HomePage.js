@@ -2,19 +2,27 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import Modal from './Modal';
 
+
 class HomePage extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            showModal: true
-        }
+            showModal: true,
+            firstName: '',
+            submittedName: ''
+        };
+    
     }
-    toggleModal = () => {
-        this.setState({
-            showModal: ! this.state.showModal
-        })
-    };
+    inputChange = e => {
+        const firstName = e.target.value;
+        this.setState(() => ({ firstName }));
 
+    };
+    displayNameHandler = () => {
+        this.setState(prevState => ({ submitedFirstName: prevState.firstName, showModal:false }));
+      };
+    
+ 
     render(){
         const { showModal } = this.state;
         return (
@@ -22,16 +30,22 @@ class HomePage extends React.Component {
                 {
                     showModal ? (
                         <div className="my-modal">
-                           <h1>Heading</h1>
-                           <p>Lorem ipsum </p>
-                           <button 
-                              className="modal-close"
-                              onClick={this.toggleModal}
-                           >X</button>
+                           <h1>Welcome to my app!</h1>
+                           <p>Please enter your name</p>
+                           <form>  
+                               <label>
+                                   Name:
+                                   <input type="text" name="firstName" onChange={this.inputChange} ></input>
+                               </label>
+                               <button type="button" onClick={this.displayNameHandler}>
+                                    Submit
+                                </button>
+                           </form>
+                
                         </div>
                      ) : null
                 }
-                 <h1>Welcome</h1>
+                 <h1>Welcome, {this.state.submitedFirstName && this.state.submitedFirstName}</h1>
                 <p>Please select a category </p>
                 <Link to="/ProgrammingJokes">
                 <button>Programming Jokes</button>
