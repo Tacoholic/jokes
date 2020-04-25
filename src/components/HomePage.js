@@ -35,9 +35,15 @@ class HomePage extends React.Component {
                            <form>  
                                <label>
                                    Name:
-                                   <input type="text" name="firstName" onChange={this.inputChange} ></input>
+                                   <input 
+                                        placeholder="Name"
+                                        type="text" 
+                                        name="firstName" 
+                                        onChange={this.inputChange}>
+
+                                    </input>
                                </label>
-                               <button type="button" onClick={this.displayNameHandler}>
+                               <button type="button" disabled={!this.state.firstName} onClick={this.displayNameHandler}>
                                     Submit
                                 </button>
                            </form>
