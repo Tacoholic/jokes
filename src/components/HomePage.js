@@ -56,6 +56,10 @@ class HomePage extends React.Component {
                  <Link to="/SportsJokes">
                 <button>Sports Jokes</button>
                 </Link>
+                <Link to="/SpanishJokes">
+                <button>Jokes en ñ</button>
+                </Link>
+                
             </div>
         )
     }
