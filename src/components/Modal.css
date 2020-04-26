@@ -1,5 +1,5 @@
 .my-modal {
-    background: rgb(29, 137, 199);
+    background: rgb(0,40,85);
     position: absolute;
     left: 0;
     right: 0;
@@ -12,14 +12,16 @@
     padding: 20px;
     text-align: center;
    }
-   .modal-close {
-    position: absolute;
-    right: 6px;
-    top: 9px;
-    cursor: pointer;
-    border: none;
-    font-size: 20px;
+
+   .my-modal input {
+    border-radius: 12px
    }
+   .my-modal button {
+       background-color: rgb(255,159,28);
+   }
+
+
+
    .modal-toggle-button {
     cursor: pointer;
     background-color: red;

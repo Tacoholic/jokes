@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import Modal from './Modal';
 
+import Buttons from './Buttons.css'
 
 class HomePage extends React.Component {
     constructor(props){
@@ -30,19 +31,15 @@ class HomePage extends React.Component {
                 {
                     showModal ? (
                         <div className="my-modal">
-                           <h1>Welcome to my app!</h1>
+                           <h1>Welcome to my Jokes app!</h1>
                            <p>Please enter your name</p>
                            <form>  
-                               <label>
-                                   Name:
                                    <input 
                                         placeholder="Name"
                                         type="text" 
                                         name="firstName" 
                                         onChange={this.inputChange}>
-
                                     </input>
-                               </label>
                                <button type="button" disabled={!this.state.firstName} onClick={this.displayNameHandler}>
                                     Submit
                                 </button>
@@ -54,16 +51,16 @@ class HomePage extends React.Component {
                  <h1>Welcome, {this.state.submitedFirstName && this.state.submitedFirstName}</h1>
                 <p>Please select a category </p>
                 <Link to="/ProgrammingJokes">
-                <button>Programming Jokes</button>
+                <button class="btn third">Programming Jokes</button>
                 </Link>
                 <Link to="/DadJokes">
-                 <button>Dad Jokes</button>
+                 <button class="btn third">Dad Jokes</button>
                  </Link>
                  <Link to="/SportsJokes">
-                <button>Sports Jokes</button>
+                <button class="btn third">Sports Jokes</button>
                 </Link>
                 <Link to="/SpanishJokes">
-                <button>Jokes en ñ</button>
+                <button class="btn third">Chistes en ñ</button>
                 </Link>
                 
             </div>
