@@ -53,27 +53,31 @@ class HomePage extends React.Component {
                      ) : null
                 }
                     <div class="flex">
-                        <h1>Welcome, {this.state.submitedFirstName && this.state.submitedFirstName}</h1>
+                        <h1>Welcome,  {this.state.submitedFirstName && this.state.submitedFirstName}</h1>
                     </div>
                     <div class="flex">
                      <p>Please select a category </p>
                     </div>
-                                <div class="flex">
-                                <Link to="/ProgrammingJokes">
-                                <button class="btn third">Programming Jokes</button>
-                                </Link>
-                                <Link to="/DadJokes">
-                                <button class="btn third">Dad Jokes</button>
-                                </Link> 
-                                </div>
-                                <div class="flex">
-                                <Link to="/SportsJokes">
-                                <button class="btn third">Sports Jokes</button>
-                                </Link>
-                                <Link to="/SpanishJokes">
-                                <button class="btn third">Chistes en ñ</button>
-                                </Link>
-                                </div>
+                    <div class="flex">
+                    <Link to="/ProgrammingJokes">
+                    <button class="btn third">Programming Jokes</button>
+                    </Link>
+                    </div>
+                    <div class="flex">
+                    <Link to="/SportsJokes">
+                    <button class="btn third">Sports Jokes</button>
+                    </Link>
+                    </div>
+                    <div class="flex">
+                    <Link to="/DadJokes">
+                    <button class="btn third">Dad Jokes</button>
+                    </Link> 
+                    </div>
+                    <div class="flex">
+                    <Link to="/SpanishJokes">
+                    <button class="btn third">Chistes en ñ</button>
+                    </Link>
+                    </div>
             </div>
         )
     }
