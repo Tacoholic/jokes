@@ -31,7 +31,7 @@ class HomePage extends React.Component {
                 {
                     showModal ? (
                         <div className="my-modal">
-                           <h1>Welcome to my Jokes app!</h1>
+                           <h1>Welcome!</h1>
                            <p>Please enter your name</p>
                            <form>  
                                    <input 
@@ -40,11 +40,10 @@ class HomePage extends React.Component {
                                         name="firstName" 
                                         onChange={this.inputChange}>
                                     </input>
-                               <button type="button" disabled={!this.state.firstName} onClick={this.displayNameHandler}>
-                                    Submit
-                                </button>
                            </form>
-                
+                           <button type="button" disabled={!this.state.firstName} onClick={this.displayNameHandler}>
+                                    Submit
+                            </button>
                         </div>
                      ) : null
                 }
