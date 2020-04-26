@@ -1,9 +1,8 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import Modal from './Modal';
-
-import Buttons from './Buttons.css'
-
+import './Buttons.css'
+import './HomePage.css'
 class HomePage extends React.Component {
     constructor(props){
         super(props);
@@ -41,27 +40,40 @@ class HomePage extends React.Component {
                                         onChange={this.inputChange}>
                                     </input>
                            </form>
-                           <button type="button" disabled={!this.state.firstName} onClick={this.displayNameHandler}>
-                                    Submit
+                           <span className="tooltiptext">
+                           <button  
+                                class="tooltip"
+                                type="button" 
+                                disabled={!this.state.firstName} 
+                                onClick={this.displayNameHandler}>
+                                Submit
                             </button>
+                            </span>
                         </div>
                      ) : null
                 }
-                 <h1>Welcome, {this.state.submitedFirstName && this.state.submitedFirstName}</h1>
-                <p>Please select a category </p>
-                <Link to="/ProgrammingJokes">
-                <button class="btn third">Programming Jokes</button>
-                </Link>
-                <Link to="/DadJokes">
-                 <button class="btn third">Dad Jokes</button>
-                 </Link>
-                 <Link to="/SportsJokes">
-                <button class="btn third">Sports Jokes</button>
-                </Link>
-                <Link to="/SpanishJokes">
-                <button class="btn third">Chistes en ñ</button>
-                </Link>
-                
+                    <div class="flex">
+                        <h1>Welcome, {this.state.submitedFirstName && this.state.submitedFirstName}</h1>
+                    </div>
+                    <div class="flex">
+                     <p>Please select a category </p>
+                    </div>
+                                <div class="flex">
+                                <Link to="/ProgrammingJokes">
+                                <button class="btn third">Programming Jokes</button>
+                                </Link>
+                                <Link to="/DadJokes">
+                                <button class="btn third">Dad Jokes</button>
+                                </Link> 
+                                </div>
+                                <div class="flex">
+                                <Link to="/SportsJokes">
+                                <button class="btn third">Sports Jokes</button>
+                                </Link>
+                                <Link to="/SpanishJokes">
+                                <button class="btn third">Chistes en ñ</button>
+                                </Link>
+                                </div>
             </div>
         )
     }

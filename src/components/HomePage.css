@@ -1,0 +1,17 @@
+body {
+    background: rgb(245, 245, 247)
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+  }
+
+  .button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+  }
