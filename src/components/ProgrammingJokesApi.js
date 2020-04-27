@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './ProgrammingJokes.css'
 
  class ProgrammingJokesApi extends React.Component {
     constructor(props){
@@ -47,20 +48,32 @@ import { Link } from 'react-router-dom';
         <ul>
           
             {this.state.jokes && (<div key={this.state.jokes.id}>
+              <div class="flex">
               <p>{this.state.jokes.setup}</p>
+              </div>
+              <div class="flex">
               <p>{this.state.jokes.delivery}</p>
+              </div>
             </div>)}
         </ul>
-        <button onClick={this.getData}>Click me!!</button>
+        <div class="flex">
+        <button class="btn third" onClick={this.getData}>Click me!!</button>
+        </div>
+        <div class="flex">
         <Link to="/SportsJokes">
-        <button>Sports Jokes</button>
-      </Link>
+        <button class="btn third" >Sports Jokes</button>
+        </Link>
+        </div>
+        <div class="flex">
       <Link to="/">
-        <button>Home Page</button>
+        <button class="btn third" >Home Page</button>
       </Link>
+      </div>
+      <div class="flex">
       <Link to="/DadJokes">
-        <button>Dad Jokes</button>
+        <button class="btn third" >Dad Jokes</button>
       </Link>
+      </div>
       </div>
       )
      }
