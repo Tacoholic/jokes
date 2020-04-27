@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
-
+import './SportsJokes.css'
 class DadJokesApi extends Component {
   constructor(props) {
     super(props);
@@ -30,19 +30,29 @@ class DadJokesApi extends Component {
         <ul>
           
             {this.state.joke && (<div key={this.state.joke.id}>
+              <div class="flex">
               <p>{this.state.joke.joke}</p>
+              </div>
             </div>)}
         </ul>
-        <button onClick={this.getJokes}>Click me!!</button>
-        <Link to="/ProgrammingJokes">
-        <button>Programming Jokes</button>
-      </Link>
-      <Link to="/">
-        <button>Home Page</button>
-      </Link>
-      <Link to="/SportsJokes">
-        <button>Sports Jokes</button>
-      </Link>
+        <div class="flex">
+          <button class="btn third" onClick={this.getJokes}>Click me!!</button>
+        </div>
+        <div class="flex">
+          <Link to="/ProgrammingJokes">
+          <button class="btn third">Programming Jokes</button>
+          </Link>
+        </div>
+        <div class="flex">
+          <Link to="/">
+          <button class="btn third">Home Page</button>
+          </Link>
+        </div>
+        <div class="flex">
+          <Link to="/SportsJokes">
+          <button class="btn third">Sports Jokes</button>
+          </Link>
+        </div>
       </div>
     );
   }
