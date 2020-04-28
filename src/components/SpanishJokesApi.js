@@ -40,15 +40,15 @@ class SpanishJokesApi extends React.Component {
           </Link>
         </div>
         <div class="flex">
-          <Link to="/">
-          <button class="btn third">Home Page</button>
-          </Link>
-         </div> 
-        <div class="flex">
           <Link to="/DadJokes">
           <button class="btn third"> Dad Jokes</button>
           </Link>
         </div>
+        <div class="flex">
+          <Link to="/">
+          <button class="btn third">Home Page</button>
+          </Link>
+         </div> 
       </React.Fragment >
     );
   }

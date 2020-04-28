@@ -45,8 +45,7 @@ import './ProgrammingJokes.css'
     render() { 
       return (
         <div>
-        <ul>
-          
+          <ul>
             {this.state.jokes && (<div key={this.state.jokes.id}>
               <div class="flex">
               <p>{this.state.jokes.setup}</p>
@@ -55,25 +54,25 @@ import './ProgrammingJokes.css'
               <p>{this.state.jokes.delivery}</p>
               </div>
             </div>)}
-        </ul>
-        <div class="flex">
-        <button class="btn third" onClick={this.getData}>Click me!!</button>
-        </div>
-        <div class="flex">
-        <Link to="/SportsJokes">
-        <button class="btn third" >Sports Jokes</button>
-        </Link>
-        </div>
-        <div class="flex">
-      <Link to="/">
-        <button class="btn third" >Home Page</button>
-      </Link>
-      </div>
-      <div class="flex">
-      <Link to="/DadJokes">
-        <button class="btn third" >Dad Jokes</button>
-      </Link>
-      </div>
+          </ul>
+          <div class="flex">
+            <button class="btn third" onClick={this.getData}>Click me!!</button>
+          </div>
+          <div class="flex">
+            <Link to="/SportsJokes">
+              <button class="btn third" >Sports Jokes</button>
+          </Link>
+          </div>
+          <div class="flex">
+            <Link to="/DadJokes">
+              <button class="btn third" >Dad Jokes</button>
+            </Link>
+          </div>
+          <div class="flex">
+            <Link to="/">
+              <button class="btn third" >Home Page</button>
+            </Link>
+          </div>
       </div>
       )
      }

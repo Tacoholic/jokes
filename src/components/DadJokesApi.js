@@ -44,13 +44,13 @@ class DadJokesApi extends Component {
           </Link>
         </div>
         <div class="flex">
-          <Link to="/">
-          <button class="btn third">Home Page</button>
+          <Link to="/SportsJokes">
+          <button class="btn third">Sports Jokes</button>
           </Link>
         </div>
         <div class="flex">
-          <Link to="/SportsJokes">
-          <button class="btn third">Sports Jokes</button>
+          <Link to="/">
+          <button class="btn third">Home Page</button>
           </Link>
         </div>
       </div>
