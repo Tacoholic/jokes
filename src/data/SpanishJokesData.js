@@ -48,8 +48,8 @@ const SpanishJokesData = [
 },
 {
     id: 10,
-    question: "What’s the best part about gardening?",
-    answer: "Getting down and dirty with your hoes."
+    question: "¿Por qué el mar no se seca?",
+    answer: "Porque no tiene toalla."
 },
 {
     id: 11,
@@ -75,6 +75,31 @@ const SpanishJokesData = [
     id: 15,
     question: "¿Sabes por qué no se puede discutir con un DJ?",
     answer: "Porque siempre están cambiando de tema."
+},
+{
+    id: 16,
+    question: "¿Por qué Bob Esponja no va al gimnasio?",
+    answer: "Porque ya está cuadrado."
+},
+{
+    id: 17,
+    question: "¿Qué es un pelo en una cama?",
+    answer: "El bello durmiente."
+},
+{
+    id: 18,
+    question: "¿Cómo se despiden los químicos?",
+    answer: "Ácido un placer"
+},
+{
+    id: 19,
+    question: "¿Qué hacen dos vascos encima de una nube?",
+    answer: "Chubascos."
+},
+{
+    id: 20,
+    question: "¿Qué le dice una morsa a otra morsa?",
+    answer: "¿Almorsamos o qué?"
 }
 ]
 
