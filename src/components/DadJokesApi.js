@@ -36,7 +36,7 @@ class DadJokesApi extends Component {
             </div>)}
         </ul>
         <div class="flex">
-          <button class="btn third" onClick={this.getJokes}>Click me!!</button>
+          <button class="btn third" onClick={this.getJokes}>Click here to 🤣</button>
         </div>
         <div class="flex">
           <Link to="/ProgrammingJokes">

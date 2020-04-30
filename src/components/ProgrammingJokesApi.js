@@ -56,7 +56,7 @@ import './ProgrammingJokes.css'
             </div>)}
           </ul>
           <div class="flex">
-            <button class="btn third" onClick={this.getData}>Click me!!</button>
+            <button class="btn third" onClick={this.getData}>Click here to 🤣</button>
           </div>
           <div class="flex">
             <Link to="/SportsJokes">
