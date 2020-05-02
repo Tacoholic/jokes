@@ -1,6 +1,7 @@
 import React from 'react'
 import SportsJokesData from '../data/SportsJokesData';
 import { Link } from 'react-router-dom';
+import './Buttons.css';
 const initialState = {
   randomJoke: []
 };
@@ -30,21 +31,26 @@ class SportsJokesApi extends React.Component {
           <p>{randomJoke.answer}</p>
         </div>
         <div class="flex">
-        <button class="btn-joke" onClick = {this.getRandomJoke}>Click here to 🤣 </button> 
+        <button class="btn joke" onClick = {this.getRandomJoke}>Click here to 🤣 </button> 
         </div>
         <div class="flex">
           <Link to="/ProgrammingJokes">
-            <button class="btn-program">Programming Jokes</button>
+            <button class="btn programming">Programming Jokes</button>
           </Link>
         </div>
         <div class="flex">
           <Link to="/DadJokes">
-          <button class="btn-dad">Dad Jokes</button>
+          <button class="btn dad">Dad Jokes</button>
+          </Link>
+        </div>
+        <div class="flex">
+          <Link to="/SpanishJokes">
+          <button class="btn spanish">Chistes en ñ</button>
           </Link>
         </div>
         <div class="flex">
           <Link to="/">
-            <button class="btn-home">Home Page</button>
+            <button class="btn home">Home Page</button>
           </Link>
         </div>
       </React.Fragment >

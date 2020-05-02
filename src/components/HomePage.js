@@ -1,6 +1,5 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import Modal from './Modal';
 import './Buttons.css'
 import './HomePage.css'
 class HomePage extends React.Component {
@@ -57,30 +56,30 @@ class HomePage extends React.Component {
                      ) : null
                 }
                 
-                <div class="flex">
+                <div class="homepage">
                     {this.state.submitedFirstName && <h1>Hello {this.state.submitedFirstName}</h1>}
                 </div>
-                <div class="flex">
+                <div class="homepage">
                     <p>Please select a category </p>
                 </div>
-                <div class="flex">
+                <div class="homepage">
                     <Link to="/ProgrammingJokes">
-                        <button class="btn third">Programming Jokes</button>
+                        <button class="btn programming">Programming Jokes</button>
                     </Link>
                 </div>
-                <div class="flex">
+                <div class="homepage">
                     <Link to="/SportsJokes">
-                        <button class="btn-second">Sports Jokes</button>
+                        <button class="btn sports">Sports Jokes</button>
                     </Link>
                 </div>
-                <div class="flex">
+                <div class="homepage">
                     <Link to="/DadJokes">
-                        <button class="btn third">Dad Jokes</button>
+                        <button class="btn dad">Dad Jokes</button>
                     </Link> 
                 </div>
-                <div class="flex">
+                <div class="homepage">
                     <Link to="/SpanishJokes">
-                        <button class="btn third">Chistes en ñ</button>
+                        <button class="btn spanish">Chistes en ñ</button>
                     </Link>
                 </div>
             </div>
