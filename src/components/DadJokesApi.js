@@ -28,35 +28,33 @@ class DadJokesApi extends Component {
     return (
       <div>
         <ul>
-          
             {this.state.joke && (<div key={this.state.joke.id}>
               <div class="flex">
-              <p>{this.state.joke.joke}</p>
+                <p>{this.state.joke.joke}</p>
               </div>
             </div>)}
         </ul>
         <div class="flex">
-          <button class="btn joke" onClick={this.getJokes}>Click here for Dad Jokes</button>
+          <button class="btn joke" onClick={this.getJokes}>Click here for joke</button>
         </div>
         <div class="flex">
           <Link to="/ProgrammingJokes">
-          <button class="btn programming">Programming Jokes</button>
+            <button class="btn programming">Programming Jokes</button>
           </Link>
         </div>
         <div class="flex">
           <Link to="/SportsJokes">
-          <button class="btn sports">Sports Jokes</button>
+            <button class="btn sports">Sports Jokes</button>
           </Link>
         </div>
         <div class="flex">
           <Link to="/SpanishJokes">
-          <button class="btn spanish">Chistes en ñ</button>
+            <button class="btn spanish">Chistes en ñ</button>
           </Link>
         </div>
-
         <div class="flex">
           <Link to="/">
-          <button class="btn home">Home Page</button>
+            <button class="btn home">Home Page</button>
           </Link>
         </div>
       </div>

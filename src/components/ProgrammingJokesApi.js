@@ -13,25 +13,22 @@ import './Buttons.css';
             jokes: null
         }
     }
- componentDidMount() 
- { 
-     this.getData() 
-}
+    componentDidMount() 
+      { 
+        this.getData() 
+      }
 
- getData() { 
-     var xhr = new XMLHttpRequest() 
-     xhr.addEventListener('load', () => { 
-         if(xhr.readyState === 4){
-             if(xhr.status === 200){
+    getData() { 
+       var xhr = new XMLHttpRequest() 
+          xhr.addEventListener('load', () => { 
+            if(xhr.readyState === 4){
+               if(xhr.status === 200){
                  var response = xhr.responseText,
                  json = JSON.parse(response);
-
                  this.setState( prev =>({
                     isLoaded: true,
-                    jokes: json
-                    
+                    jokes: json    
                  }))
-                    
              } else {
                  this.setState({
                      isLoaded: true,
@@ -49,20 +46,20 @@ import './Buttons.css';
           <ul>
             {this.state.jokes && (<div key={this.state.jokes.id}>
               <div class="flex">
-              <p>{this.state.jokes.setup}</p>
+                <p>{this.state.jokes.setup}</p>
               </div>
               <div class="flex">
-              <p>{this.state.jokes.delivery}</p>
+                <p>{this.state.jokes.delivery}</p>
               </div>
             </div>)}
           </ul>
           <div class="flex">
-            <button class="btn joke" onClick={this.getData}>Click here for the joke</button>
+            <button class="btn joke" onClick={this.getData}>Click here for joke</button>
           </div>
           <div class="flex">
             <Link to="/SportsJokes">
               <button class="btn sports" >Sports Jokes</button>
-          </Link>
+            </Link>
           </div>
           <div class="flex">
             <Link to="/DadJokes">

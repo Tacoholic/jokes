@@ -33,7 +33,7 @@ class HomePage extends React.Component {
                 {
                     showModal ? (
                         <div className="my-modal">
-                           <h1>Welcome!</h1>
+                           <h1>Welcome to the joke machine!</h1>
                            <p>Please enter your name</p>
                            <form>  
                                 <input 

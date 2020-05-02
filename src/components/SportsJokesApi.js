@@ -7,19 +7,16 @@ const initialState = {
 };
 
 class SportsJokesApi extends React.Component {
-
   constructor(props) {
     super(props);
     this.getRandomJoke = this.getRandomJoke.bind(this);
     this.state = initialState;
   }
-
   getRandomJoke() {
     this.setState({
       randomJoke: SportsJokesData[(SportsJokesData.length * Math.random()) << 0]
     });
   }
-
   render() {
     const {randomJoke} = this.state;
     return (
@@ -31,7 +28,7 @@ class SportsJokesApi extends React.Component {
           <p>{randomJoke.answer}</p>
         </div>
         <div class="flex">
-        <button class="btn joke" onClick = {this.getRandomJoke}>Click here for joke </button> 
+          <button class="btn joke" onClick = {this.getRandomJoke}>Click here for joke </button> 
         </div>
         <div class="flex">
           <Link to="/ProgrammingJokes">
@@ -40,12 +37,12 @@ class SportsJokesApi extends React.Component {
         </div>
         <div class="flex">
           <Link to="/DadJokes">
-          <button class="btn dad">Dad Jokes</button>
+            <button class="btn dad">Dad Jokes</button>
           </Link>
         </div>
         <div class="flex">
           <Link to="/SpanishJokes">
-          <button class="btn spanish">Chistes en ñ</button>
+            <button class="btn spanish">Chistes en ñ</button>
           </Link>
         </div>
         <div class="flex">

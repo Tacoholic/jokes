@@ -9,19 +9,16 @@ const initialState = {
 };
 
 class SpanishJokesApi extends React.Component {
-
   constructor(props) {
     super(props);
     this.getRandomJoke = this.getRandomJoke.bind(this);
     this.state = initialState;
   }
-
   getRandomJoke() {
     this.setState({
       randomJoke: SpanishJokesData[(SpanishJokesData.length * Math.random()) << 0]
     });
   }
-
   render() {
     const { randomJoke } = this.state;
     return (
@@ -33,26 +30,26 @@ class SpanishJokesApi extends React.Component {
           <p> {randomJoke.answer} </p>
         </div>
         <div class="flex">
-          <button class="btn joke"onClick = {this.getRandomJoke}>Oprime aquí</button> 
+          <button class="btn joke"onClick = {this.getRandomJoke}>Oprime aquí para el chiste</button> 
         </div>
         <div class="flex">
           <Link to="/ProgrammingJokes">
-          <button class="btn programming">Programming Jokes</button>
+            <button class="btn programming">Programming Jokes</button>
           </Link>
         </div>
         <div class="flex">
           <Link to="/DadJokes">
-          <button class="btn sports"> Sports Jokes</button>
+            <button class="btn sports"> Sports Jokes</button>
           </Link>
         </div>
         <div class="flex">
           <Link to="/DadJokes">
-          <button class="btn dad"> Dad Jokes</button>
+            <button class="btn dad"> Dad Jokes</button>
           </Link>
         </div>
         <div class="flex">
           <Link to="/">
-          <button class="btn home">Home Page</button>
+            <button class="btn home">Home Page</button>
           </Link>
          </div> 
       </React.Fragment >
