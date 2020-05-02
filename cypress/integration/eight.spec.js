@@ -14,5 +14,12 @@ describe ('UI tests', () => {
         cy.get('.btn-joke').click()
         cy.get('.btn-dad').click()
         cy.get('.btn-joke').click()
+        cy.wait(2000) 
+        cy.get('.btn-joke').click()  
+        cy.wait(2000) 
+        cy.get('.btn-joke').click()  
     })
 })
+
+
+//Passed
