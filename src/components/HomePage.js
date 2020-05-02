@@ -44,20 +44,20 @@ class HomePage extends React.Component {
                                     name="firstName" 
                                     onChange={this.inputChange}>
                                 </input>
-                                <button  
+                           </form>
+                           <button  
                                 className="modal-btn"
                                 type="button" 
                                 disabled={!this.state.firstName} 
                                 onClick={this.displayNameHandler}>
                                 Submit
                             </button>
-                           </form>
                         </div>
                      ) : null
                 }
                 
                 <div class="homepage">
-                    {this.state.submitedFirstName && <h1>Hello {this.state.submitedFirstName}</h1>}
+                    {this.state.submitedFirstName && <h1>Hello, {this.state.submitedFirstName}!</h1>}
                 </div>
                 <div class="homepage">
                     <p>Please select a category </p>

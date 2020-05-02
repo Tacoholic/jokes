@@ -31,7 +31,7 @@ class SportsJokesApi extends React.Component {
           <p>{randomJoke.answer}</p>
         </div>
         <div class="flex">
-        <button class="btn joke" onClick = {this.getRandomJoke}>Click here to 🤣 </button> 
+        <button class="btn joke" onClick = {this.getRandomJoke}>Click here for joke </button> 
         </div>
         <div class="flex">
           <Link to="/ProgrammingJokes">
