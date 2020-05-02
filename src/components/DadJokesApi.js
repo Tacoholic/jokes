@@ -39,7 +39,7 @@ class DadJokesApi extends Component {
         </div>
         <div class="flex">
           <Link to="/ProgrammingJokes">
-            <button class="btn programming">Programming Jokes</button>
+            <button class="programming">Programming Jokes</button>
           </Link>
         </div>
         <div class="flex">
