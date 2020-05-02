@@ -38,27 +38,27 @@ class HomePage extends React.Component {
                            <p>Please enter your name</p>
                            <form>  
                                 <input 
+                                    autoFocus
+                                    className="new task"
                                     placeholder="Name"
                                     type="text" 
                                     name="firstName" 
                                     onChange={this.inputChange}>
                                 </input>
-                           </form>
-                           <span className="tooltiptext">
-                           <button  
-                                class="tooltip"
+                                <button  
+                                className="modal-btn"
                                 type="button" 
                                 disabled={!this.state.firstName} 
                                 onClick={this.displayNameHandler}>
                                 Submit
                             </button>
-                            </span>
+                           </form>
                         </div>
                      ) : null
                 }
                 
                 <div class="flex">
-                {this.state.submitedFirstName && <h1>Hello {this.state.submitedFirstName}</h1>}
+                    {this.state.submitedFirstName && <h1>Hello {this.state.submitedFirstName}</h1>}
                 </div>
                 <div class="flex">
                     <p>Please select a category </p>
@@ -70,7 +70,7 @@ class HomePage extends React.Component {
                 </div>
                 <div class="flex">
                     <Link to="/SportsJokes">
-                        <button class="btn third">Sports Jokes</button>
+                        <button class="btn-second">Sports Jokes</button>
                     </Link>
                 </div>
                 <div class="flex">
