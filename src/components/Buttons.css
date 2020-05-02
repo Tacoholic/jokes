@@ -46,3 +46,14 @@
   .programming:hover, .sports:hover, .dad:hover, .spanish:hover, .home:hover, .joke:hover {
     box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
   }
+
+  .joke{
+    border-color: #D62828;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #D62828 inset, 0 0 0 0 #D62828;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+  }
+  .joke:hover {
+    box-shadow: 0 0 10px 0 #D62828 inset, 0 0 10px 4px #D62828;
+  }
