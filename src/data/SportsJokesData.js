@@ -67,7 +67,7 @@ const SportsJokesData = [
     },
     {
         id: "12",
-        question: "Why dpn't the Cubs have a website?",
+        question: "Why don't the Cubs have a website?",
         answer: "They can't get 3 W's in a row"
 
     },
