@@ -56,30 +56,30 @@ class HomePage extends React.Component {
                      ) : null
                 }
                 
-                <div class="homepage">
+                <div className="homepage">
                     {this.state.submitedFirstName && <h1>Hello, {this.state.submitedFirstName}!</h1>}
                 </div>
-                <div class="homepage">
+                <div className="homepage">
                     <p>Please select a category </p>
                 </div>
-                <div class="homepage">
+                <div className="homepage">
                     <Link to="/ProgrammingJokes">
-                        <button class="btn programming">Programming Jokes</button>
+                        <button className="btn programming">Programming Jokes</button>
                     </Link>
                 </div>
-                <div class="homepage">
+                <div className="homepage">
                     <Link to="/SportsJokes">
-                        <button class="btn sports">Sports Jokes</button>
+                        <button className="btn sports">Sports Jokes</button>
                     </Link>
                 </div>
-                <div class="homepage">
+                <div className="homepage">
                     <Link to="/DadJokes">
-                        <button class="btn dad">Dad Jokes</button>
+                        <button className="btn dad">Dad Jokes</button>
                     </Link> 
                 </div>
-                <div class="homepage">
+                <div className="homepage">
                     <Link to="/SpanishJokes">
-                        <button class="btn spanish">Chistes en ñ</button>
+                        <button className="btn spanish">Chistes en ñ</button>
                     </Link>
                 </div>
             </div>

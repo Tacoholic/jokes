@@ -45,35 +45,35 @@ import './Buttons.css';
         <div>
           <ul>
             {this.state.jokes && (<div key={this.state.jokes.id}>
-              <div class="flex">
+              <div className="flex">
                 <p>{this.state.jokes.setup}</p>
               </div>
-              <div class="flex">
+              <div className="flex">
                 <p>{this.state.jokes.delivery}</p>
               </div>
             </div>)}
           </ul>
-          <div class="flex">
-            <button class="btn joke" onClick={this.getData}>Click here for joke</button>
+          <div className="flex">
+            <button className="btn joke" onClick={this.getData}>Click here for joke</button>
           </div>
-          <div class="flex">
+          <div className="flex">
             <Link to="/SportsJokes">
-              <button class="btn sports" >Sports Jokes</button>
+              <button className="btn sports" >Sports Jokes</button>
             </Link>
           </div>
-          <div class="flex">
+          <div className="flex">
             <Link to="/DadJokes">
-              <button class="btn dad" >Dad Jokes</button>
+              <button className="btn dad" >Dad Jokes</button>
             </Link>
           </div>
-          <div class="flex">
+          <div className="flex">
             <Link to="/SpanishJokes">
-              <button class="btn spanish" >Chistes en ñ</button>
+              <button className="btn spanish" >Chistes en ñ</button>
             </Link>
           </div>
-          <div class="flex">
+          <div className="flex">
             <Link to="/">
-              <button class="btn home" >Home Page</button>
+              <button className="btn home" >Home Page</button>
             </Link>
           </div>
       </div>
