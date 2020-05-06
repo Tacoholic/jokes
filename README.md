@@ -14,7 +14,7 @@ Installing
 
 `git clone https://github.com/pnb90/jokes.git`
 
-cd into "house_of_books" and run
+cd into "jokes" and run
 
 `npm install`
 
