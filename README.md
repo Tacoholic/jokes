@@ -28,7 +28,7 @@ This command will start the app on localhost:3000/, where it is ready to use! En
 If you wish to see the live demo, here you go:  http://tacoholic.github.io/jokes/
 
 ## Testing
-Testing was done with Cypress. It turned out to be a pleasant experience working with Cypress. It also fell more in line with my beliefs towards testing. In the end, I was able to achieve what I wanted which was begin with unit testing and work my way up all the way to end-to-end testing.  As a result of this one of the things I was able to achieve, as silly as it sounds, was I ended up fixing the classNames for several things HTML elements.  Tests were not running correctly as a result, so I had to stop and look over everything. 
+Testing was done with Cypress. It turned out to be a pleasant experience working with Cypress. It also fell more in line with my beliefs towards testing. In the end, I was able to achieve what I wanted which was begin with unit testing and work my way up all the way to end-to-end testing.  As a result of this, I ended up fixing the classNames for several things HTML elements.  Tests were not running correctly as a result, so I had to stop and look over everything. Once the fixes were done, the tests were running smoothly. 
 
 ## Goals
 #### Pull jokes from 4 different apis, using fetch, XMLHttpRequest and axios.
