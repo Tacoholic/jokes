@@ -31,12 +31,16 @@ If you wish to see the live demo, here you go:  http://tacoholic.github.io/jokes
 Testing was done with Cypress. It turned out to be a pleasant experience working with Cypress. It also fell more in line with my beliefs towards testing. In the end, I was able to achieve what I wanted which was begin with unit testing and work my way up all the way to end-to-end testing.  As a result of this, I ended up fixing the classNames for several things HTML elements.  Tests were not running correctly as a result, so I had to stop and look over everything. Once the fixes were done, the tests were running smoothly. 
 
 ## Goals
+
+#### Create an app from scratch, with no video or article tutorial.
+
+#### Design test plans and execute them by using Cypress.
+
 #### Pull jokes from 4 different apis, using fetch, XMLHttpRequest and axios.
 I was only able to use two methods because there weren't any Spanish and Sports jokes apis out there for me to use axios.  
 
-#### Tackle css from scratch and include some sort of animation
+#### Take on all of the CSS by myself by creating eveything from scratch.
 
-#### I was able to complete my understanding of the challenge I gave myself, which was create an app from scratch, with no video or article tutorial.
 
 
 ## Challenges
