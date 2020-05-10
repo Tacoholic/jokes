@@ -9,7 +9,7 @@ const SpanishJokesData = [
 {
     id: 2,
     question: "¿Sabes cómo se queda un mago después de comer?",
-    answer: "Magordito"
+    answer: "Magordito."
 },
 {
     id: 3,

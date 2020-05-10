@@ -20,7 +20,7 @@ const SportsJokesData = [
     {
         id: "4",
         question: "Which baseball player holds water?",
-        answer: "The pitcher"
+        answer: "The pitcher."
 
     },
     {
@@ -37,20 +37,20 @@ const SportsJokesData = [
     },
     {
         id: "7",
-        question: "What do you call twelve millionaires gathered around the TV to watch the NBA Finals?",
-        answer: "The Chicago Bulls"
+        question: "What do you call 12 millionaires watching the NBA Finals?",
+        answer: "The Chicago Bulls."
 
     },
     {
         id: "8",
-        question: "Why can't Aaron Rogers use the phone anymore?",
+        question: "Why can't Aaron Rodgers use the phone anymore?",
         answer: "Because he can't find the receiver."
 
     },
     {
         id: "9",
         question: "Why do the Germans always get beat by the Canadians in hockey?",
-        answer: "Canadians bring the “eh” game, while Germans bring their wurst."
+        answer: "Canadians bring the \"eh\" game, while Germans bring their \"wurst\"."
 
     },
     {
@@ -61,7 +61,7 @@ const SportsJokesData = [
     },
     {
         id: "11",
-        question: "What does a Dallas Cowboys fan do when his team has won the Super Bowl?",
+        question: "What does a Cowboys fan do when their team has won the Super Bowl?",
         answer: "He turns off the PlayStation."
 
     },
@@ -79,8 +79,8 @@ const SportsJokesData = [
     },
     {
         id: "14",
-        question: "Does anyone know what they call winning teams in Chicago",
-        answer: "Visitors"
+        question: "Does anyone know what they call winning teams in Chicago?",
+        answer: "Visitors."
 
     },
     {
@@ -91,13 +91,13 @@ const SportsJokesData = [
     },
     {
         id: "16",
-        question: "Trump's favorite baseball team is the Yankees",
+        question: "Trump's favorite baseball team is the Yankees.",
         answer: "Except during the draft, then it's the Dodgers."
 
     },
     {
         id: "17",
-        question: "How do you keep the Detroit Lions out of your front yard?",
+        question: "How do you keep Cody Parker out of your front yard?",
         answer: "Put up goal posts."
 
     },
